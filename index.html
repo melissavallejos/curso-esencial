@@ -1,54 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-physical.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
     <title>El Blog de Melissa</title>
 
 </head>
-   
-        <header>
-            <body>
-            <nav>
-            <details open>
-                <summary>
-                    Setup
-                </summary>
-           
-                    
-                <ol>
-                <li> <a href="#google-chrome">  Google Chrome        </a> </li>
-                <li> <a href="#vsc">            Visual Stufio Chrome </a> </li>
-                <li> <a href="#figma">          Figma                </a> </li>
-                <li> <a href="#github">         GitHub               </a> </li>
-                </ol>
-            </details>
+    <body>       
+        <div class="hero"> </div>  
+        
+        <div class="header">
+            <div class="wrapper">
+                <div class="header-content">
+                    <header>
+                        <nav>
+                        <details open>
+                            <summary>
+                                Setup
+                            </summary>
+                       
+                                
+                            <ol>
+                            <li> <a href="#google-chrome">  Google Chrome        </a> </li>
+                            <li> <a href="#vsc">            Visual Stufio Chrome </a> </li>
+                            <li> <a href="#figma">          Figma                </a> </li>
+                            <li> <a href="#github">         GitHub               </a> </li>
+                            </ol>
+                        </details>
+            
+                        <nav>
+                        <details open>
+                            <summary>
+                               Conceptos esenciales del Desarrollo Web
+                            </summary>
+                            <ol>
+                            <li>   <a href="#html">      Qué es HTML </a>    </li>
+                            <li>   <a href="#etiquetas"> Etiquetas   </a>    </li>
+                            <li>   <a href="#dom">       DOM         </a>    </li>
+                            <li>   <a href="#semantica"> Semántica   </a>    </li>
+                            <li>   <a href="#atributos"> Atributos   </a>    </li>
+                            <li>   <a href="#css">       Qué es CSS   </a>   </li>
+                        </ol>
+                        </details>
+                         </nav>
+                    </header>   
+                </div>
+            </div>
+        </div>
 
-            <nav>
-            <details open>
-                <summary>
-                   Conceptos esenciales del Desarrollo Web
-                </summary>
-                <ol>
-                <li>   <a href="#html">      Qué es HTML </a>    </li>
-                <li>   <a href="#etiquetas"> Etiquetas   </a>    </li>
-                <li>   <a href="#dom">       DOM         </a>    </li>
-                <li>   <a href="#semantica"> Semántica   </a>    </li>
-                <li>   <a href="#atributos"> Atributos   </a>    </li>
-                <li>   <a href="#css">       Qué es CSS   </a>   </li>
-            </ol>
-            </details>
-             </nav>
-        </header>
-    <h1>Curso esencial de HTML y CSS
-    </h1>
-             <p>Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación de contenidos, en el nivel 2 aprenderás de componentes y en 3 sobre layouts. </p>
-   
+     
+
+
+        <main class="main">  
+
+        <div class="wrapper"> 
+
+        <div class="main-content">
+
+        <h1>Curso esencial de HTML y CSS
+        </h1>
+        <p>Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación de contenidos, en el nivel 2 aprenderás de componentes y en 3 sobre layouts. </p>
+         
+        <hr>
+        <section class="section-content">
+
         <h2 style="font-size: 30px;">
         Setup
         </h2>
-
         <img src="./images/google-chrome.png" alt="Logo de Google Chrome" title="Logo de Google Chrome">
         <h3 id="google-chrome">Google Chrome</h3>
         <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas de desarrollo avanzadas y de amigable uso.
@@ -66,14 +89,30 @@
         <h3 id="github">GitHub</h3>
         <p>Así como en Facebook te encuentran tus amigos, en Github te encuentran otras programadoras y programadores de todo el mundo, en vez de subir fotos de tus viajes aquí subes tu código y puedes elegir hacerlo “open source” o guardarlo de manera privada, Github será esencial para almacenar tu futuro portafolio.</p>
 
+        <blockquote>
+            <p> 
+            "Este es el inicio de tu carrera como Desarrolladora Web"
+            </p>
+            <p>
+            <span> 
+            Melissa Vallejos
+            </span>
+             </p>
+        </blockquote>
+
+        </section>
         <hr>
+
+        <section class="section-content">
+
+            
+
         <h2>Conceptos esenciales del Desarrollo Web</h2>
-        <h3 id="html">¿Qué es HTML</h3>
+        <h3 id="html">¿Qué es HTML?</h3>
         <p>Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado y la estructura del contenido.
            
         </p>
             <pre>
-const ="your name" 
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -82,10 +121,10 @@ const ="your name"
 &lt;title&gt;Document&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    
+
 &lt;/body&gt;
 &lt;/html&gt;
-            </pre>
+</pre>
 
         <h3 id="etiquetas">Etiquetas</h3>
         <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene características y usos diferentes aunque visualmente den un resultado similar.</p>
@@ -105,9 +144,11 @@ const ="your name"
         <p>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la presentación de documentos HTML</p>
         <img src="./images/css.png" alt="Imagen de CSS">
 
-        <h2 style="font-size: 30px;">
-            Modelo de caja
-            </h2>
+        </section>
+
+        <section class="section-content">
+        
+        <h2> Modelo de caja   </h2>
         <h3>El modelo de caja está compuesto por:</h3>
         <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas de desarrollo avanzadas y de amigable uso.</p>
             <ol>
@@ -135,12 +176,18 @@ const ="your name"
         
         <h3>Modelo de caja</h3>
         <img src="images/meli.png" alt="Foto de Melissa">
+
+            
+        </section>
         <p>Si tienes alguna pregunta escríbeme a 
         
         <a href="mailto:mely_0117@hotmail.com" target="_blank">mvallejos@gmail.com</a>
         </p>
-        <h3>Suscríbete a nuestro newsletter</h3>
 
+        
+
+        <h3>Suscríbete a nuestro newsletter</h3>
+   
        
        <script>
             const $detailsList =document.querySelectorAll("details")
@@ -154,5 +201,9 @@ const ="your name"
             })
         }
         </script>
+
+        </div>
+        </div>
+        </main>
     </body>
 </html>
